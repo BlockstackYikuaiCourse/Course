@@ -11,7 +11,7 @@
 (define-data-var value uint u0)
 (define-public (get)
  (ok (var-get value)))
-(define-public (set (nvalue uint))
+(define-public (set (value uint))
  (begin (var-set value (+ (var-get value) u1))
 	(ok 'true)))
 ```
