@@ -9,9 +9,9 @@
 - store
 ```
 (define-data-var value uint u0)
-(define-public (get)
+(define-public (get-value)
  (ok (var-get value)))
-(define-public (set (value uint))
+(define-public (set (nvalue uint))
  (begin (var-set value (+ (var-get value) u1))
 	(ok 'true)))
 ```
